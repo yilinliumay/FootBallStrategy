@@ -1,0 +1,8 @@
+<!ELEMENT Players (Player*) >
+        <!ELEMENT Player (ID, name,position) >
+        <!ATTLIST Player id CDATA #REQUIRED>
+        <!ELEMENT ID (#PCDATA)>
+        <!ELEMENT position (#PCDATA)>
+        <!ELEMENT name (#PCDATA)>
+
+

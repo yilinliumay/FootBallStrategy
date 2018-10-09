@@ -1,0 +1,31 @@
+<!ELEMENT Games (Game*) >
+        <!ELEMENT Game (players, result) >
+        <!ATTLIST Game id CDATA #REQUIRED>
+        <!ELEMENT players (player*)>
+        <!ELEMENT player (attack*,defense*,goal,position,discipline) >
+        <!--the success rate of dribble, pitching....-->
+        <!ELEMENT attack (dribble,pitching,cross,shooting,header,freeKick) >
+        <!ELEMENT dribble (#PCDATA)>
+        <!ELEMENT pitching (#PCDATA)>
+        <!ELEMENT cross (#PCDATA)>
+        <!ELEMENT shooting (#PCDATA)>
+        <!ELEMENT header (#PCDATA)>
+        <!ELEMENT freeKick (#PCDATA)>
+        <!--the success rate of broken,interception....-->
+        <!ELEMENT defense (broken,interception,clearance,forcedGrab,headerClearance,GoalkeeperRescue) >
+        <!ELEMENT broken (#PCDATA)>
+        <!ELEMENT interception (#PCDATA)>
+        <!ELEMENT clearance (#PCDATA)>
+        <!ELEMENT forcedGrab (#PCDATA)>
+        <!ELEMENT headerClearance (#PCDATA)>
+        <!ELEMENT GoalkeeperRescue (#PCDATA)>
+        <!--the number of red and yellow cards he got -->
+        <!ELEMENT discipline (red,yellow)>
+        <!ELEMENT red (#PCDATA)>
+        <!ELEMENT yellow (#PCDATA)>
+        <!ELEMENT goal (#PCDATA)>
+        <!ELEMENT position (#PCDATA)>
+        <!ATTLIST player ID CDATA #REQUIRED>
+        <!ELEMENT result (#PCDATA)>
+
+

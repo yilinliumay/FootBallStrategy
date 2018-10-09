@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FootballField.PlayerInformation.PlayerInfoController">
+   <children>
+      <VBox layoutX="117.0" layoutY="45.0" prefHeight="400.0" prefWidth="600.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="name" alignment="CENTER" prefHeight="47.0" prefWidth="244.0" stylesheets="@PlayerStyle.css" text="Name" />
+            <Label fx:id="game" prefHeight="36.0" prefWidth="601.0" stylesheets="@PlayerStyle.css" text="  Game">
+               <font>
+                  <Font name="Apple Color Emoji" size="21.0" />
+               </font>
+            </Label>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="label1" alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="Games Played" textFill="#ff0707">
+                     <font>
+                        <Font name="DIN Alternate Bold" size="18.0" />
+                     </font></Label>
+                  <Label fx:id="total" alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="0" textAlignment="CENTER" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="label2" alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="WON" textAlignment="CENTER" textFill="#ff0707" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="DIN Alternate Bold" size="18.0" />
+                     </font></Label>
+                  <Label fx:id="won" alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="label4" alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="LOST" textAlignment="CENTER" textFill="#ff0707" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="DIN Alternate Bold" size="18.0" />
+                     </font></Label>
+                  <Label fx:id="lost" alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="label3" alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="DRAWN" textFill="#ff0707" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="DIN Alternate Bold" size="18.0" />
+                     </font></Label>
+                  <Label fx:id="drawn" alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+               </children>
+            </GridPane>
+            <Label fx:id="defense" prefHeight="36.0" prefWidth="601.0" stylesheets="@PlayerStyle.css" text="  Defense">
+               <font>
+                  <Font name="Apple Color Emoji" size="21.0" />
+               </font>
+            </Label>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="Interception" textFill="#ff0707" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="DIN Alternate Bold" size="18.0" />
+                     </font></Label>
+                  <Label fx:id="clearance" alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="Clearance" textFill="#ff0707" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="DIN Alternate Bold" size="18.0" />
+                     </font></Label>
+                  <Label fx:id="interception" alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="broken" alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="0" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="ForcedGrab" textFill="#ff0707" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="DIN Alternate Bold" size="18.0" />
+                     </font></Label>
+                  <Label fx:id="forcedGrab" alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="0" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="HeaderClearance" textFill="#ff0707" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="DIN Alternate Bold" size="18.0" />
+                     </font></Label>
+                  <Label fx:id="headerClearance" alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="KeeperRescue" textFill="#ff0707" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="DIN Alternate Bold" size="18.0" />
+                     </font></Label>
+                  <Label fx:id="keeperRescue" alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="Broken" textFill="#ff0707">
+                     <font>
+                        <Font name="DIN Alternate Bold" size="18.0" />
+                     </font></Label>
+               </children>
+            </GridPane>
+            <Label fx:id="attack" prefHeight="36.0" prefWidth="601.0" stylesheets="@PlayerStyle.css" text="  Attack">
+               <font>
+                  <Font name="Apple Color Emoji" size="21.0" />
+               </font>
+            </Label>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="Dribble" textFill="#ff0707">
+                     <font>
+                        <Font name="DIN Alternate Bold" size="18.0" />
+                     </font></Label>
+                  <Label fx:id="dribble" alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="0" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="Shooting" textFill="#ff0707" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="DIN Alternate Bold" size="18.0" />
+                     </font></Label>
+                  <Label fx:id="shooting" alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="0" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="Pitching" textFill="#ff0707" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="DIN Alternate Bold" size="18.0" />
+                     </font></Label>
+                  <Label fx:id="pitching" alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="Header" textFill="#ff0707" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="DIN Alternate Bold" size="18.0" />
+                     </font></Label>
+                  <Label fx:id="header" alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="Cross" textFill="#ff0707" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="DIN Alternate Bold" size="18.0" />
+                     </font></Label>
+                  <Label fx:id="freeKick" alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="FreeKick" textFill="#ff0707" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="DIN Alternate Bold" size="18.0" />
+                     </font></Label>
+                  <Label fx:id="cross" alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+               </children>
+            </GridPane>
+            <Label fx:id="discipline" prefHeight="36.0" prefWidth="601.0" stylesheets="@PlayerStyle.css" text="  Discipline">
+               <font>
+                  <Font name="Apple Color Emoji" size="21.0" />
+               </font>
+            </Label>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" prefHeight="24.0" prefWidth="302.0" text="YellowCard" textFill="#ff0707">
+                     <font>
+                        <Font name="DIN Alternate Bold" size="18.0" />
+                     </font></Label>
+                  <Label fx:id="red" alignment="CENTER" prefHeight="24.0" prefWidth="302.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="yellow" alignment="CENTER" prefHeight="24.0" prefWidth="302.0" text="0" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label alignment="CENTER" prefHeight="24.0" prefWidth="302.0" text="RedCard" textFill="#ff0707" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="DIN Alternate Bold" size="18.0" />
+                     </font></Label>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

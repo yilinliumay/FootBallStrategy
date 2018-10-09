@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FootballField.SchemeResult.SchemeResultController">
+   <children>
+      <VBox layoutX="127.0" layoutY="55.0" prefHeight="400.0" prefWidth="600.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="name" alignment="CENTER" prefHeight="52.0" prefWidth="303.0" stylesheets="@../PlayerInformation/PlayerStyle.css" text="WOW!" textFill="#0848d3" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+               <font>
+                  <Font name="Geneva" size="11.0" />
+               </font></Label>
+            <GridPane prefHeight="159.0" prefWidth="304.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="label1" alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="Attack" textFill="#ff0707">
+                     <font>
+                        <Font name="DIN Alternate Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="label11" alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="Defense" textFill="#ff0707" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="DIN Alternate Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="label12" alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="Discipline" textFill="#ff0707" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="DIN Alternate Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="attack" alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="0" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="DIN Alternate Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="defense" alignment="CENTER" prefHeight="18.0" prefWidth="191.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="DIN Alternate Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="41.0" prefWidth="74.0" text="RED" textFill="#fc0808">
+                           <font>
+                              <Font name="DIN Alternate Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="43.0" prefWidth="73.0" text="YELLOW" textFill="#c9c608">
+                           <font>
+                              <Font name="DIN Alternate Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <children>
+                        <Label fx:id="red" alignment="CENTER" contentDisplay="CENTER" prefHeight="41.0" prefWidth="74.0" text="0">
+                           <font>
+                              <Font name="DIN Alternate Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="yellow" alignment="CENTER" prefHeight="43.0" prefWidth="73.0" text="0">
+                           <font>
+                              <Font name="DIN Alternate Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </GridPane>
+            <Label fx:id="assess" alignment="CENTER" prefHeight="63.0" prefWidth="300.0" stylesheets="@../PlayerInformation/PlayerStyle.css" text="WOW!" textFill="#0848d3" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+               <font>
+                  <Font name="DIN Condensed Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+#game,#position,#defense,#attack,#discipline{
+
+    -fx-font-weight: bolder;
+    -fx-text-fill: white;
+
+    -fx-background-color: blueviolet;
+    -fx-background-insets: 4,4,4,4;
+    -fx-effect: dropshadow(two-pass-box ,lightskyblue, 10, 0.0 , 4, 5);
+
+}
+
+#name{
+    -fx-font-size: 30px;
+    -fx-font-family: "Serif";
+    -fx-fill: #818181;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+
+}

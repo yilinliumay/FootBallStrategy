@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FootballField.MainField.MainFieldController">
+   <children>
+      <SplitPane dividerPositions="0.42" prefHeight="160.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+        <items>
+          <AnchorPane fx:id="anchorLeft" maxHeight="800.0" maxWidth="400.0" minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="400.0" stylesheets="@MainStyle.css" SplitPane.resizableWithParent="false">
+               <children>
+                  <VBox maxHeight="600.0" maxWidth="400.0" prefHeight="600.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label fx:id="leftLabel" maxHeight="30.0" maxWidth="400.0" prefHeight="44.0" prefWidth="400.0" stylesheets="@MainStyle.css" text="  FORWARD" />
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
+                           <children>
+                              <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <children>
+                                    <Button fx:id="LM" mnemonicParsing="false" onAction="#TurnToPlayerInfo" prefHeight="50.0" prefWidth="50.0" />
+                                    <Label fx:id="LML" onDragDetected="#handleDragDetection" onDragDone="#handelDragDone" text="Messi" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <children>
+                                    <Button fx:id="LS" mnemonicParsing="false" onAction="#TurnToPlayerInfo" prefHeight="50.0" prefWidth="50.0" />
+                                    <Label fx:id="player12" onDragDetected="#handleDragDetection" onDragDone="#handelDragDone" text="Luis " />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <children>
+                                    <Button fx:id="OD" mnemonicParsing="false" onAction="#TurnToPlayerInfo" prefHeight="50.0" prefWidth="50.0" />
+                                    <Label fx:id="ODL" onDragDetected="#handleDragDetection" onDragDone="#handelDragDone" text="Ousmane " />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <children>
+                                    <Button fx:id="MEH" mnemonicParsing="false" onAction="#TurnToPlayerInfo" prefHeight="50.0" prefWidth="50.0" />
+                                    <Label fx:id="MEHL" nodeOrientation="LEFT_TO_RIGHT" onDragDetected="#handleDragDetection" onDragDone="#handelDragDone" text="Munir " textOverrun="WORD_ELLIPSIS" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Label fx:id="leftLabel1" maxHeight="30.0" maxWidth="400.0" prefHeight="44.0" prefWidth="400.0" stylesheets="@MainStyle.css" text="  MIDFIELD" />
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                           <children>
+                              <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <children>
+                                    <Button fx:id="IR" mnemonicParsing="false" onAction="#TurnToPlayerInfo" prefHeight="50.0" prefWidth="50.0" />
+                                    <Label fx:id="IRL" onDragDetected="#handleDragDetection" onDragDone="#handelDragDone" text="Ivan" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <children>
+                                    <Button fx:id="PC" mnemonicParsing="false" onAction="#TurnToPlayerInfo" prefHeight="50.0" prefWidth="50.0" />
+                                    <Label fx:id="PCL" alignment="CENTER" onDragDetected="#handleDragDetection" onDragDone="#handelDragDone" prefHeight="17.0" prefWidth="94.0" text="Philippe" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <children>
+                                    <Button fx:id="SR" mnemonicParsing="false" onAction="#TurnToPlayerInfo" prefHeight="50.0" prefWidth="50.0" />
+                                    <Label fx:id="SRL" onDragDetected="#handleDragDetection" onDragDone="#handelDragDone" text="Sergi " />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                           <children>
+                              <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <children>
+                                    <Button fx:id="AG" mnemonicParsing="false" onAction="#TurnToPlayerInfo" prefHeight="50.0" prefWidth="50.0" />
+                                    <Label fx:id="AGL" onDragDetected="#handleDragDetection" onDragDone="#handelDragDone" text="André " />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <children>
+                                    <Button fx:id="AV" mnemonicParsing="false" onAction="#TurnToPlayerInfo" prefHeight="50.0" prefWidth="50.0" />
+                                    <Label fx:id="AVL" onDragDetected="#handleDragDetection" onDragDone="#handelDragDone" text="Aleix" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <children>
+                                    <Button fx:id="DS" mnemonicParsing="false" onAction="#TurnToPlayerInfo" prefHeight="50.0" prefWidth="50.0" />
+                                    <Label fx:id="DSL" onDragDetected="#handleDragDetection" onDragDone="#handelDragDone" text="Denis " />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Label fx:id="leftLabel2" maxHeight="30.0" maxWidth="400.0" prefHeight="44.0" prefWidth="400.0" stylesheets="@MainStyle.css" text="  DEFENDER" />
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                           <children>
+                              <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <children>
+                                    <Button fx:id="NS" mnemonicParsing="false" onAction="#TurnToPlayerInfo" prefHeight="50.0" prefWidth="50.0" />
+                                    <Label fx:id="NSL" onDragDetected="#handleDragDetection" onDragDone="#handelDragDone" text="Nélson " />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <children>
+                                    <Button fx:id="JA" mnemonicParsing="false" onAction="#TurnToPlayerInfo" prefHeight="50.0" prefWidth="50.0" />
+                                    <Label fx:id="JAL" onDragDetected="#handleDragDetection" onDragDone="#handelDragDone" text="Jordi" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <children>
+                                    <Button fx:id="GP" mnemonicParsing="false" onAction="#TurnToPlayerInfo" prefHeight="50.0" prefWidth="50.0" />
+                                    <Label fx:id="GPL" onDragDetected="#handleDragDetection" onDragDone="#handelDragDone" text="Gerard" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                           <children>
+                              <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <children>
+                                    <Button fx:id="LD" mnemonicParsing="false" onAction="#TurnToPlayerInfo" prefHeight="50.0" prefWidth="50.0" />
+                                    <Label fx:id="LDL" onDragDetected="#handleDragDetection" onDragDone="#handelDragDone" text="Lucas" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <children>
+                                    <Button fx:id="YM" mnemonicParsing="false" onAction="#TurnToPlayerInfo" prefHeight="50.0" prefWidth="50.0" />
+                                    <Label fx:id="YML" alignment="CENTER" onDragDetected="#handleDragDetection" onDragDone="#handelDragDone" prefHeight="17.0" prefWidth="94.0" text="Yerry" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <children>
+                                    <Button fx:id="TV" mnemonicParsing="false" onAction="#TurnToPlayerInfo" prefHeight="50.0" prefWidth="50.0" />
+                                    <Label fx:id="TVL" onDragDetected="#handleDragDetection" onDragDone="#handelDragDone" text="Thomas" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Label fx:id="leftLabel3" maxHeight="30.0" maxWidth="400.0" prefHeight="44.0" prefWidth="400.0" stylesheets="@MainStyle.css" text="  Keeper" />
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                           <children>
+                              <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <children>
+                                    <Button fx:id="JC" mnemonicParsing="false" onAction="#TurnToPlayerInfo" prefHeight="50.0" prefWidth="50.0" />
+                                    <Label fx:id="JCL" onDragDetected="#handleDragDetection" onDragDone="#handelDragDone" text="Jasper" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <children>
+                                    <Button fx:id="AOV" mnemonicParsing="false" onAction="#TurnToPlayerInfo" prefHeight="50.0" prefWidth="50.0" />
+                                    <Label fx:id="AOVL" onDragDetected="#handleDragDetection" onDragDone="#handelDragDone" text="Adrià" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" SplitPane.resizableWithParent="false">
+               <children>
+                  <SplitPane dividerPositions="0.1691919191919192" layoutX="48.0" layoutY="59.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane fx:id="anchorTop" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" stylesheets="@MainStyle.css" SplitPane.resizableWithParent="false">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Button fx:id="button532" blendMode="DARKEN" mnemonicParsing="false" onAction="#ToScheme" prefHeight="58.0" prefWidth="121.0" stylesheets="@MainStyle.css" text="          5-3-2" textAlignment="CENTER" />
+                                    <Button fx:id="button433" blendMode="DARKEN" mnemonicParsing="false" onAction="#ToScheme" prefHeight="58.0" prefWidth="121.0" stylesheets="@MainStyle.css" text="          4-3-3" textAlignment="CENTER" />
+                                    <Button fx:id="button442" blendMode="DARKEN" mnemonicParsing="false" onAction="#ToScheme" prefHeight="58.0" prefWidth="121.0" stylesheets="@MainStyle.css" text="          4-4-2" textAlignment="CENTER">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </Button>
+                                    <Button fx:id="button343" blendMode="DARKEN" mnemonicParsing="false" onAction="#ToScheme" prefHeight="58.0" prefWidth="121.0" stylesheets="@MainStyle.css" text="          3-4-3" textAlignment="CENTER" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </HBox>
+                           </children></AnchorPane>
+                      <AnchorPane fx:id="anchorPane" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: GREEN;" SplitPane.resizableWithParent="false">
+                           <children>
+                              <StackPane fx:id="stackPane" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <GridPane fx:id="pane442" nodeOrientation="RIGHT_TO_LEFT" prefHeight="266.0" prefWidth="383.0" visible="false" StackPane.alignment="CENTER">
+                                      <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Label fx:id="DF4442" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Centre Defend" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+                                          <Label fx:id="DF3442" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Centre Defend" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="7" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                                          <Label fx:id="DF2442" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Side Defend" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                                          <Label fx:id="DF1442" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Side Defend" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="12" />
+                                          <Label fx:id="MF4442" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Side MidField" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                          <Label fx:id="MF3442" alignment="CENTER" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Centre MidField  " textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+                                          <Label fx:id="MF2442" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Centre MidField" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                                          <Label fx:id="MF1442" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Side MidField" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="12" />
+                                          <Label fx:id="FW2442" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Centre Forward " textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                          <Label fx:id="FW1442" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Centre Forward" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                          <Label fx:id="GK442" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Goal Keeper" wrapText="true" GridPane.columnIndex="9" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+                                          <Button fx:id="OK" mnemonicParsing="false" onAction="#TurnToSchemeResult" prefHeight="50.0" prefWidth="50.0" stylesheets="@MainStyle.css" GridPane.rowIndex="12" GridPane.rowSpan="2" />
+                                       </children>
+                                    </GridPane>
+                                    <GridPane fx:id="pane343" nodeOrientation="RIGHT_TO_LEFT" prefHeight="266.0" prefWidth="383.0" visible="false">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label fx:id="DF1343" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Centre Defend" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="7" GridPane.rowIndex="9" />
+                                          <Label fx:id="DF2343" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Centre Defend" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="7" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                                          <Label fx:id="DF3343" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Centre Defend" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+                                          <Label fx:id="FW1343" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Centre Forward" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                          <Label fx:id="MF1343" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Side MidField" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                          <Label fx:id="MF2343" alignment="CENTER" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Centre MidField  " textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+                                          <Label fx:id="MF3343" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Centre MidField" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                                          <Label fx:id="MF4343" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Side MidField" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="12" />
+                                          <Label fx:id="FW3343" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Centre Forward " textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                          <Label fx:id="FW2343" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Centre Forward" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+                                          <Label fx:id="GK343" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Goal Keeper" wrapText="true" GridPane.columnIndex="9" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+                                          <Button fx:id="OK1" mnemonicParsing="false" onAction="#TurnToSchemeResult" prefHeight="50.0" prefWidth="50.0" stylesheets="@MainStyle.css" GridPane.rowIndex="12" GridPane.rowSpan="2" />
+                                       </children>
+                                    </GridPane>
+                                    <GridPane fx:id="pane433" nodeOrientation="RIGHT_TO_LEFT" prefHeight="266.0" prefWidth="383.0" visible="false">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label fx:id="DF1433" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Centre Defend" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="7" GridPane.rowIndex="9" />
+                                          <Label fx:id="DF2433" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Full Defend" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                          <Label fx:id="DF3433" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Centre Defend" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+                                          <Label fx:id="FW1433" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Centre Forward" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                          <Label fx:id="MF1433" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Centre MidField" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.rowSpan="2" />
+                                          <Label fx:id="MF2433" alignment="CENTER" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Centre MidField  " textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.rowSpan="2" />
+                                          <Label fx:id="MF3433" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Centre MidField" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.rowSpan="2" />
+                                          <Label fx:id="DF4433" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Full Defend" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="12" />
+                                          <Label fx:id="FW2433" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Winger" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                          <Label fx:id="FW3443" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Winger" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+                                          <Label fx:id="GK433" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Goal Keeper" wrapText="true" GridPane.columnIndex="9" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+                                          <Button fx:id="OK2" mnemonicParsing="false" onAction="#TurnToSchemeResult" prefHeight="50.0" prefWidth="50.0" stylesheets="@MainStyle.css" GridPane.rowIndex="12" GridPane.rowSpan="2" />
+                                       </children>
+                                    </GridPane>
+                                    <GridPane fx:id="pane532" nodeOrientation="RIGHT_TO_LEFT" prefHeight="266.0" prefWidth="383.0" visible="false">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label fx:id="DF3532" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Centre Defend" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="7" GridPane.rowIndex="9" />
+                                          <Label fx:id="DF4532" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Full Defend" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                          <Label fx:id="DF2532" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Centre Defend" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                                          <Label fx:id="DF1532" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Centre Defend" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+                                          <Label fx:id="MF1532" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Centre MidField" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.rowSpan="2" />
+                                          <Label fx:id="MF3532" alignment="CENTER" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Centre MidField  " textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.rowSpan="2" />
+                                          <Label fx:id="MF2532" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Centre MidField" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.rowSpan="2" />
+                                          <Label fx:id="DF5532" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Full Defend" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="12" />
+                                          <Label fx:id="FW2532" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Centre Forward" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                          <Label fx:id="FW1532" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Centre Forward" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                          <Label fx:id="GK532" onDragDropped="#handelDrop" onDragOver="#handelDragOver" stylesheets="@MainStyle.css" text="Goal Keeper" wrapText="true" GridPane.columnIndex="9" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+                                          <Button fx:id="OK3" mnemonicParsing="false" onAction="#TurnToSchemeResult" prefHeight="50.0" prefWidth="50.0" stylesheets="@MainStyle.css" GridPane.rowIndex="12" GridPane.rowSpan="2" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</HBox>

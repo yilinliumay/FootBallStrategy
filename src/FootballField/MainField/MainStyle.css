@@ -1,0 +1,150 @@
+
+
+#button442,#button343,#button433,#button532{
+    /*-fx-effect: dropshadow(two-pass-box ,gold, 10, 0.0 , 4, 5);*/
+    /*-fx-background-color:*/
+            /*linear-gradient(#ffd65b, #e68400),*/
+            /*linear-gradient(#ffef84, #f2ba44),*/
+            /*linear-gradient(#ffea6a, #efaa22),*/
+            /*linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),*/
+            /*linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));*/
+    /*-fx-background-radius: 15 15 15 15;*/
+    /*-fx-background-insets: 2 2 2 2 ;*/
+    -fx-background-image: url("../Image/Icon.png");
+}
+
+
+#OK,#OK1,#OK2,#OK3,#OK21{
+    -fx-background-radius: 3em;
+
+    -fx-min-width: 40px;
+
+    -fx-min-height: 40px;
+
+    -fx-max-width: 40px;
+
+    -fx-max-height: 40px;
+
+    -fx-background-image: url("../Image/OK.jpg");
+    -fx-background-size: 40px;
+
+}
+#OK:hover{
+    -fx-background-image: url("../Image/OK.jpg");
+    -fx-background-size: 50px;
+}
+
+#button532:hover,#button433:hover,#button343:hover,#button442:hover{
+    -fx-background-image: url("../Image/Icon2.png");
+}
+
+#LM{
+    -fx-background-image: url("../Image/LM.png");
+    -fx-background-size: 50;
+}
+#PC{
+    -fx-background-image: url("../Image/PC.png");
+    -fx-background-size: 50;
+}
+#GP{
+    -fx-background-image: url("../Image/GP.png");
+    -fx-background-size: 50;
+}
+#IR{
+    -fx-background-image: url("../Image/IR.png");
+    -fx-background-size: 50;
+}
+#SR{
+    -fx-background-image: url("../Image/SR.png");
+    -fx-background-size: 50;
+}
+#LS{
+    -fx-background-image: url("../Image/LS.png");
+    -fx-background-size: 50;
+}
+#OD{
+    -fx-background-image: url("../Image/OD.png");
+    -fx-background-size: 50;
+}
+#MEH{
+    -fx-background-image: url("../Image/MEH.png");
+    -fx-background-size: 50;
+}
+#NS{
+    -fx-background-image: url("../Image/NS.png");
+    -fx-background-size: 50;
+}
+#JA{
+    -fx-background-image: url("../Image/JA.png");
+    -fx-background-size: 50;
+}
+#JC{
+    -fx-background-image: url("../Image/JC.png");
+    -fx-background-size: 50;
+}
+
+#AOV{
+    -fx-background-image: url("../Image/AOV.png");
+    -fx-background-size: 50;
+}
+#DS{
+    -fx-background-image: url("../Image/DS.png");
+    -fx-background-size: 50;
+}
+#LD{
+    -fx-background-image: url("../Image/LD.png");
+    -fx-background-size: 50;
+}
+#YM{
+    -fx-background-image: url("../Image/YM.png");
+    -fx-background-size: 50;
+}
+#TV{
+    -fx-background-image: url("../Image/TV.png");
+    -fx-background-size: 50;
+}
+#AV{
+    -fx-background-image: url("../Image/AV.png");
+    -fx-background-size: 50;
+}
+#AG{
+    -fx-background-image: url("../Image/AG.png");
+    -fx-background-size: 50;
+}
+
+
+
+#GK442,#GK343,#GK433,#GK532{
+
+    -fx-font-weight: bolder;
+    -fx-text-fill: black;
+
+}
+#FW2442,#FW1442,#FW1343,#FW2343,#FW3343,#FW1433,#FW2433,#FW3443,#FW1532,#FW2532,#FW1532,#FW2532{
+
+    -fx-font-weight: bolder;
+    -fx-text-fill: red;
+}
+#DF4442,#DF3442,#DF2442,#DF1442,#DF1343,#DF2343,#DF3343,#DF1433,#DF2433,#DF3433,#DF4433,#DF1532,#DF2532,#DF3532,#DF4532,#DF5532{
+
+    -fx-font-weight: bolder;
+    -fx-text-fill: blue;
+}
+#MF1442,#MF2442,#MF3442,#MF4442,#MF1343,#MF2343,#MF3343,#MF4343,#MF1433,#MF2433,#MF3433,#MF1532,#MF2532,#MF3532{
+
+    -fx-font-weight: bolder;
+    -fx-text-fill: yellow;
+}
+
+#anchorTop{
+    /*-fx-background-image: url("Backgroud1.jpg");*/
+    /*background-blend-mode: screen;*/
+}
+#leftLabel,#leftLabel1,#leftLabel2,#leftLabel3{
+    -fx-font-weight: bolder;
+    -fx-text-fill: white;
+
+    -fx-background-color: green;
+    -fx-background-insets: 4,4,4,4;
+    -fx-effect: dropshadow(two-pass-box ,greenyellow, 10, 0.0 , 4, 5);
+}

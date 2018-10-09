@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Players SYSTEM "/Users/mayliu/IdeaProjects/FootBallStrategy/src/Data/players.dtd">
+<Players>
+
+    <Player id="1">
+        <ID>LM</ID>
+        <name>Lionel Messi</name>
+        <position>Forward</position>
+    </Player>
+    <Player id="2">
+        <ID>LS</ID>
+        <name>Luis Suárez</name>
+        <position>Forward</position>
+    </Player>
+
+    <Player id="3">
+        <ID>OD</ID>
+        <name>Ousmane Dembélé</name>
+        <position>Forward</position>
+    </Player>
+
+    <Player id="4">
+        <ID>MEH</ID>
+        <name>Munir El Haddadi</name>
+        <position>Forward</position>
+    </Player>
+
+    <Player id="5">
+        <ID>IR</ID>
+        <name>Ivan Rakitić</name>
+        <position>Midfield</position>
+    </Player>
+
+    <Player id="6">
+        <ID>PC</ID>
+        <name>Philippe Coutinho</name>
+        <position>Midfield</position>
+    </Player>
+
+    <Player id="7">
+        <ID>SR</ID>
+        <name>Sergi Roberto</name>
+        <position>Midfield</position>
+    </Player>
+
+    <Player id="8">
+        <ID>DS</ID>
+        <name>Denis Suárez</name>
+        <position>Midfield</position>
+    </Player>
+    <Player id="9">
+        <ID>AG</ID>
+        <name>André Gomes</name>
+        <position>Midfield</position>
+    </Player>
+    <Player id="10">
+        <ID>AV</ID>
+        <name>Aleix Vidal</name>
+        <position>Midfield</position>
+    </Player>
+
+    
+    <Player id="12">
+        <ID>NS</ID>
+        <name>Nélson Semedo</name>
+        <position>Defender</position>
+    </Player>
+
+    <Player id="13">
+        <ID>JA</ID>
+        <name>Jordi Alba</name>
+        <position>Defender</position>
+    </Player>
+    <Player id="14">
+        <ID>GP</ID>
+        <name>Gerard Piqué</name>
+        <position>Defender</position>
+    </Player>
+    <Player id="15">
+        <ID>TV</ID>
+        <name>Thomas Vermaelen</name>
+        <position>Defender</position>
+    </Player>
+    <Player id="16">
+        <ID>LD</ID>
+        <name>Lucas Digne</name>
+        <position>Defender</position>
+    </Player>
+    <Player id="17">
+        <ID>YM</ID>
+        <name>Yerry Mina</name>
+        <position>Defender</position>
+    </Player>
+    <Player id="18">
+        <ID>JC</ID>
+        <name>Jasper Cillessen</name>
+        <position>GoalKeeper</position>
+    </Player>
+    <Player id="19">
+        <ID>AOV</ID>
+        <name>Adrià Ortolá Vañó</name>
+        <position>GoalKeeper</position>
+    </Player>
+</Players>
